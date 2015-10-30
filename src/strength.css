@@ -1,34 +1,69 @@
-@charset "utf-8";
-/* CSS Document */
-
-.strength_meter{
-	height:23px;
-width: 154px;
-	background:silver;
+div.strength-meter-holder {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+div.strength-meter-holder input {
+	background: transparent;
+}
+.button_strength {
+	display: block;
+}
+.strength_meter {
+	background: transparent;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: -1;
 	
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+		 -o-border-radius: 4px;
+			border-radius: 4px;
 }
-.strength_meter div{
-	height:23px;
-	width:100%;
-	height:23px;
+.strength_meter div {
+	color: #444444;
+	height: 100%;
+	line-height: 18px;
 	text-align:center;
-	color:black;
-	font-weight:bold;
-	line-height:23px;
 }
-.veryweak{
+.strength_meter div p {
+	position: absolute;
+	right: 0px;
+	top: 34px;
+}
+.strength_meter div.veryweak {
 	background-color: #FFA0A0;
-border-color: #F04040!important
+	border-color: #F04040!important;
+	display: block;
+	width: 25%;
 }
-.weak{
-background-color: #FFB78C;
-border-color: #FF853C!important;
+.strength_meter div.weak {
+	background-color: #FFB78C;
+	border-color: #FF853C!important;
+	display: block;
+	width: 50%;
 }
-.medium{
-background-color: #FFEC8B;
-border-color: #FC0!important;
+.strength_meter div.medium {
+	background-color: #FFEC8B;
+	border-color: #FC0!important;
+	display: block;
+	width: 75%;
 }
-.strong{
-background-color: #C3FF88;
-border-color: #8DFF1C!important;
+.strength_meter div.strong {
+	background-color: #C3FF88;
+	border-color: #8DFF1C!important;
+	display: block;
+	width: 100%;
+}
+.strength-text {
+	bottom: auto;
+	color: #444444;
+	position: absolute;
+	right: 0px;
+}
+.strength-text p {
+	margin: 0px;
 }
