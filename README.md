@@ -124,13 +124,13 @@ If you want to initiate the plugin with options then you can do so like:
 									<td>showPasswordToggle</td>
 									<td>true</td>
 									<td>Enable or disable the Show/hide password button</td>
-									<td></td>
+									<td>true / false</td>
 								</tr>
 								<tr>
 									<td>allowCopyPasteCut</td>
 									<td>false</td>
 									<td>Enable or disable the possibility to copy, paste or cut from the password field</td>
-									<td></td>
+									<td>true / false</td>
 								</tr>
 								<tr>
 									<td>copyPasteCutMessage</td>
